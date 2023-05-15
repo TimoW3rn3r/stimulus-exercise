@@ -1,0 +1,50 @@
+<div data-controller="hello"></div>
+
+<div data-controller="toggle" data-toggle-change-class="hidden">
+  <div data-toggle-target="content">Content</div>
+  <button data-action="toggle#toggleClass">Click</button>
+</div>
+
+<div data-controller="toggle" data-toggle-change-class="hidden">
+  <div data-action="click->toggle#toggleClass">DropDown Menu</div>
+  <ul data-toggle-target="content">
+    <li>Item 1</li>
+    <li>Item 1</li>
+    <li>Item 1</li>
+  </ul>
+</div>
+
+<div data-controller="toggle" data-toggle-change-class="hidden">
+  <div data-action="click->toggle#toggleClass" data-toggle-target="content">Me</div>
+  <div
+    data-action="click->toggle#toggleClass"
+    data-toggle-target="content"
+    class="hidden"
+  >You</div>
+</div>
+
+<div data-controller="toggle" data-toggle-change-class="highlight">
+  <div data-toggle-target="content">
+    <label for="ab">AB</label>
+    <input name="ab" id="id" type="checkbox" data-action="toggle#toggleClass">
+  </div>
+</div>
+
+<div data-controller="toggle" data-toggle-change-class="highlight">
+  <div data-toggle-target="content">
+    <label for="cd">CD</label>
+    <input name="cd" id="id" type="checkbox" data-action="toggle#toggleClass">
+  </div>
+</div>
+
+<div data-controller="toggle" data-toggle-change-class="highlight">
+  <div data-toggle-target="content">
+    <label for="ef">EF</label>
+    <input name="ef" id="id" type="checkbox" data-action="toggle#toggleClass">
+  </div>
+</div>
+
+<div data-controller="text-input">
+  <input type="text" data-text-input-target="input" data-action="text-input#count">
+  <div data-text-input-target="output"></div>
+</div>
